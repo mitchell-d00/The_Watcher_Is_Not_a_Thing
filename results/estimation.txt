@@ -1,0 +1,27 @@
+==============================================================
+1. FINITE-SAMPLE BIAS: a screened-off layer, true CMI = 0
+==============================================================
+true I(T;W2|W1) = 0.000000 bits
+  N=   100   mean estimate = 0.0161 bits   95th pct = 0.0427 bits
+  N=   500   mean estimate = 0.0032 bits   95th pct = 0.0095 bits
+  N=  1000   mean estimate = 0.0015 bits   95th pct = 0.0046 bits
+  N=  5000   mean estimate = 0.0003 bits   95th pct = 0.0010 bits
+  N= 20000   mean estimate = 0.0001 bits   95th pct = 0.0002 bits
+
+==============================================================
+2. REGIME DEPENDENCE: Design B under different drift prevalence
+==============================================================
+  b1 = P(flag | fault), b0 = P(flag | no fault)
+  nominal, drift rare    b1=0.12 b0=0.10  dD=0.0002 bits  =   0.1% of residual
+  mild drift             b1=0.25 b0=0.12  dD=0.0053 bits  =   1.7% of residual
+  the paper's example    b1=0.60 b0=0.05  dD=0.0791 bits  =  25.9% of residual
+  heavy drift            b1=0.85 b0=0.03  dD=0.1674 bits  =  54.8% of residual
+
+==============================================================
+3. BASE-RATE DEPENDENCE: same architecture, different prior
+==============================================================
+  P(T=1)=0.5    H(T)=1.0000  dD=0.1548 bits  =  25.7% of residual
+  P(T=1)=0.2    H(T)=0.7219  dD=0.1147 bits  =  25.7% of residual
+  P(T=1)=0.1    H(T)=0.4690  dD=0.0791 bits  =  25.9% of residual
+  P(T=1)=0.02   H(T)=0.1414  dD=0.0256 bits  =  24.7% of residual
+  P(T=1)=0.005  H(T)=0.0454  dD=0.0076 bits  =  21.4% of residual

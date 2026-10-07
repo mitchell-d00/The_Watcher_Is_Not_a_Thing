@@ -8,7 +8,7 @@ A stopping rule for recursions of observers. An additional layer of observation 
 |---|---|
 | Author | Mitchell D. McPhetridge |
 | Status | Current. Open to revision. |
-| Updated | August 2026 |
+| Updated | October 2026 (code validation; paper unchanged) |
 | Scope | Observer hierarchies where a target variable can be declared |
 | Supersedes | *The Watcher Who Watches the Watchers* (April 2025); *Those Who Watch Back* (2025) |
 | Kill conditions | §20 of the paper, summarized below |
@@ -28,6 +28,10 @@ The_Watcher_Is_Not_a_Thing.md      the paper, source
 The_Watcher_Is_Not_a_Thing.txt     the paper, plain text
 watcher_gate.py                    the §11 worked example
 estimation.py                      the §8 and §9 tables
+permutation_gate.py                discrete within-stratum permutation test
+tests/                             standard-library verification checks
+VALIDATION.md                      reproduction, results and open limits
+results/                           recorded synthetic outputs
 ```
 
 ## Running the code
@@ -52,6 +56,26 @@ residual     = 25.9% of what W1 left
 Change the parameters at the top and the verdict changes with them. Design A is not in the code because its zero is structural rather than numerical — its output is a function of the layer beneath it, so the conditional mutual information vanishes identically and no parameter choice moves it.
 
 `estimation.py` produces the three tables that constrain how far the Gate can be trusted. It is the more important of the two scripts. Its first result is that a genuinely screened-off layer, measured on a hundred samples, returns a positive estimate whose 95th percentile is more than half the real gain in the worked example. A threshold set without reference to sample size admits Onions one time in twenty.
+
+## Reproduction and the sampled-null test
+
+Both original scripts have been rerun and reproduce the reported values.
+The missing within-stratum permutation test is now implemented separately:
+
+```bash
+python3 permutation_gate.py --demo design-b
+python3 permutation_gate.py --demo screened-off
+python3 -m unittest discover -s tests -v
+```
+
+All 12 tests pass. [VALIDATION.md](VALIDATION.md) records the base commit,
+synthetic outputs, CSV usage and assumptions. No blank README placeholders
+were present. The original scripts and paper files are unchanged.
+
+The new tool tests a categorical sample against a shuffled null; it does not
+implement the entire Gate. A non-significant result is unresolved, not a
+termination or proof of zero gain. Sample adequacy, practical-effect thresholds,
+power, multiple testing and real-world validation remain open.
 
 ## What the Gate needs before it means anything
 

@@ -1,0 +1,5 @@
+H(T)         = 0.4690 bits
+I(T;W1)      = 0.1634 bits
+H(T|W1)      = 0.3056 bits
+I(T;W2|W1)   = 0.0791 bits   (Design B)
+residual     = 25.9% of what W1 left

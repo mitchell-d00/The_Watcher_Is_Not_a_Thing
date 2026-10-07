@@ -1,0 +1,22 @@
+{
+  "base_commit": "09bebc11674027d9e3ee9b12b981919018ccc2ad",
+  "python": "3.12",
+  "tests_passed": 12,
+  "blank_readmes_removed": 0,
+  "original_scripts_unchanged": true,
+  "paper_files_unchanged": true,
+  "synthetic_only": true,
+  "demo_parameters": {
+    "samples": 1000,
+    "permutations": 999,
+    "sample_seed": 0,
+    "permutation_seed": 1,
+    "alpha": 0.05
+  },
+  "source_sha256": {
+    "watcher_gate.py": "68a13a01626a5ed047274efaeeefaebc85fc13e6388824a20448ecd5e46dc3e1",
+    "estimation.py": "4fa9cabc3bbe14e58a317f6c6556c012442f038a63114a10aaaac75a843b5f11",
+    "permutation_gate.py": "febe3bc7116e324beb3da1daa875e7104e447eba4a033e2a8ba45525cb2e70f7",
+    "tests/test_permutation_gate.py": "e61b52bd83d177e3b4f5c2f7f253eac19d4653e55bc4e29ef095efd032f30e62"
+  }
+}

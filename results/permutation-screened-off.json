@@ -1,0 +1,27 @@
+{
+  "n": 1000,
+  "n_strata": 2,
+  "informative_strata": 2,
+  "singleton_strata": 0,
+  "observed_cmi_bits": 0.0007554891741536154,
+  "residual_entropy_bits": 0.30977423785925406,
+  "normalized_gain": 0.0024388379723715822,
+  "alpha": 0.05,
+  "permutations": 999,
+  "seed": 1,
+  "null_quantile_bits": 0.0043133364416821154,
+  "normalized_null_quantile": 0.013924128976928934,
+  "monte_carlo_p": 0.641,
+  "status": "no_gain_resolved",
+  "reason": "Does not clear the sampled null; not evidence of zero gain or a termination verdict. Power has not been established.",
+  "declarations": {
+    "target": "synthetic binary fault T",
+    "boundary": "two synthetic binary monitor outputs",
+    "ordering": "W1 below W2; conditioning on W1",
+    "regime": "screened-off: parameters fixed in demo_rows; IID simulated observations"
+  },
+  "synthetic": true,
+  "sample_sha256": "8ccd088b47de3395f10aa769f98fc944ff7dabb3c0a32c4bd9369b0c6ecb3cd0",
+  "sample_seed": 0,
+  "notice": "Discrete IID/exchangeable rows only. Labels and declarations do not prove these assumptions. No power or equivalence analysis; no structural termination verdict."
+}

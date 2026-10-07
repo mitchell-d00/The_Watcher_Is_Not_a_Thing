@@ -1,0 +1,27 @@
+{
+  "n": 1000,
+  "n_strata": 2,
+  "informative_strata": 2,
+  "singleton_strata": 0,
+  "observed_cmi_bits": 0.05099068661197709,
+  "residual_entropy_bits": 0.30977423785925406,
+  "normalized_gain": 0.1646059626015276,
+  "alpha": 0.05,
+  "permutations": 999,
+  "seed": 1,
+  "null_quantile_bits": 0.003956388287877418,
+  "normalized_null_quantile": 0.012771844150819937,
+  "monte_carlo_p": 0.001,
+  "status": "gain_resolved",
+  "reason": "Clears the sampled null under the declared assumptions; not an effect-size or usefulness verdict.",
+  "declarations": {
+    "target": "synthetic binary fault T",
+    "boundary": "two synthetic binary monitor outputs",
+    "ordering": "W1 below W2; conditioning on W1",
+    "regime": "design-b: parameters fixed in demo_rows; IID simulated observations"
+  },
+  "synthetic": true,
+  "sample_sha256": "56163cd1b54702cecb51a569a79fd92e791387e6b74095f922ff499921eee09c",
+  "sample_seed": 0,
+  "notice": "Discrete IID/exchangeable rows only. Labels and declarations do not prove these assumptions. No power or equivalence analysis; no structural termination verdict."
+}
