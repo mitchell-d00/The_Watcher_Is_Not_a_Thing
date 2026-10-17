@@ -8,7 +8,7 @@ A stopping rule for recursions of observers. An additional layer of observation 
 |---|---|
 | Author | Mitchell D. McPhetridge |
 | Status | Current. Open to revision. |
-| Updated | October 2026 (code validation; paper unchanged) |
+| Updated | 17 October 2026 (meta-watcher and bounded stopping experiment; historical paper unchanged) |
 | Scope | Observer hierarchies where a target variable can be declared |
 | Supersedes | *The Watcher Who Watches the Watchers* (April 2025); *Those Who Watch Back* (2025) |
 | Kill conditions | §20 of the paper, summarized below |
@@ -16,6 +16,16 @@ A stopping rule for recursions of observers. An additional layer of observation 
 ---
 
 ## The claim in one paragraph
+
+**17 October 2026 implementation update:** The paragraph below describes the
+historical paper, not an implemented general stopping guarantee. A new
+[meta-watcher experiment](experiments/watcher_audit/README.md) tests distinct
+contributions, copying failures, and complementary XOR monitors. Its
+[bounded stopping extension](experiments/watcher_audit/STOPPING.md) uses
+simultaneous finite-alphabet confidence bounds and candidate combinations.
+It returns continue, inconclusive, or stop within a predeclared finite scope.
+It does not infer absence from a non-significant permutation test. See
+[revision history](CHANGELOG.md) for changes and unresolved issues.
 
 The Watcher is not an entity. A process A watches a process B when information about B is causally available to A, makes a difference to what A does next, remains usable when B is gone, and is capable of being wrong. Watcher and watched are roles, not classes. Dissolving the observer this way is the cheap half and other people got there first; the expensive half is that the recursion still exists and nothing in the dissolution tells you when to stop adding layers to it. The Gate is that stopping rule. Let T be the declared target. The gain of layer n is the conditional mutual information I(T ; W_n | W_(<n)), normalized by the uncertainty remaining beneath it. If that falls below a declared threshold, stop.
 

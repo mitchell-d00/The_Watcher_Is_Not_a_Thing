@@ -1,0 +1,39 @@
+test_constant_target_selects_no_monitors (test_audit.AuditTests.test_constant_target_selects_no_monitors) ... ok
+test_copy_failure_is_detected_without_deleting_both (test_audit.AuditTests.test_copy_failure_is_detected_without_deleting_both) ... ok
+test_discovery_and_validation_differ (test_audit.AuditTests.test_discovery_and_validation_differ) ... ok
+test_distinct_panel_excludes_duplicate_noise_stuck (test_audit.AuditTests.test_distinct_panel_excludes_duplicate_noise_stuck) ... ok
+test_exact_xor_requires_joint_panel (test_audit.AuditTests.test_exact_xor_requires_joint_panel) ... ok
+test_fresh_data_confirms_each_contribution (test_audit.AuditTests.test_fresh_data_confirms_each_contribution) ... ok
+test_unfitted_auditor_rejects_run (test_audit.AuditTests.test_unfitted_auditor_rejects_run) ... ok
+test_entropy_continuity_endpoints (test_stopping.StoppingTests.test_entropy_continuity_endpoints) ... ok
+test_more_data_narrows_interval (test_stopping.StoppingTests.test_more_data_narrows_interval) ... ok
+test_partial_search_cannot_stop_on_xor (test_stopping.StoppingTests.test_partial_search_cannot_stop_on_xor) ... ok
+test_redundancy_can_certify_stop (test_stopping.StoppingTests.test_redundancy_can_certify_stop) ... ok
+test_reject_invalid_support_and_counts (test_stopping.StoppingTests.test_reject_invalid_support_and_counts) ... ok
+test_singleton_target_has_zero_gain_bound (test_stopping.StoppingTests.test_singleton_target_has_zero_gain_bound) ... ok
+test_small_sample_remains_inconclusive (test_stopping.StoppingTests.test_small_sample_remains_inconclusive) ... ok
+test_stop_does_not_require_target_already_solved (test_stopping.StoppingTests.test_stop_does_not_require_target_already_solved) ... ok
+test_unseen_cells_still_count_in_bound (test_stopping.StoppingTests.test_unseen_cells_still_count_in_bound) ... ok
+test_xor_continue_despite_individually_useless_candidates (test_stopping.StoppingTests.test_xor_continue_despite_individually_useless_candidates) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 1.478s
+
+OK
+test_balanced_independence (test_permutation_gate.PermutationGateTests.test_balanced_independence) ... ok
+test_csv_declarations_required_and_valid_cli (test_permutation_gate.PermutationGateTests.test_csv_declarations_required_and_valid_cli) ... ok
+test_exhaustive_null_matches_analytic_probability (test_permutation_gate.PermutationGateTests.test_exhaustive_null_matches_analytic_probability) ... ok
+test_invalid_inputs (test_permutation_gate.PermutationGateTests.test_invalid_inputs) ... ok
+test_known_one_bit_gain (test_permutation_gate.PermutationGateTests.test_known_one_bit_gain) ... ok
+test_no_residual_uncertainty (test_permutation_gate.PermutationGateTests.test_no_residual_uncertainty) ... ok
+test_original_scripts_still_reproduce_reported_values (test_permutation_gate.PermutationGateTests.test_original_scripts_still_reproduce_reported_values) ... ok
+test_reproducible_without_global_rng_effect (test_permutation_gate.PermutationGateTests.test_reproducible_without_global_rng_effect) ... ok
+test_screened_off_layer_has_no_increment (test_permutation_gate.PermutationGateTests.test_screened_off_layer_has_no_increment) ... ok
+test_strata_and_margins_are_preserved (test_permutation_gate.PermutationGateTests.test_strata_and_margins_are_preserved) ... ok
+test_strong_signal_and_positive_p_value (test_permutation_gate.PermutationGateTests.test_strong_signal_and_positive_p_value) ... ok
+test_ties_are_counted (test_permutation_gate.PermutationGateTests.test_ties_are_counted) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.773s
+
+OK

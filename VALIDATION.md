@@ -1,5 +1,25 @@
 # Reproduction and permutation-test implementation
 
+## Addendum: 17 October 2026
+
+The historical validation record below is retained. The new experiment adds
+7 meta-watcher tests and 10 bounded-stopping tests; all 29 tests including the
+original 12 passed. Full output is recorded in
+`experiments/watcher_audit/verification.txt`.
+
+Five fixed seeds each reproduce panel selection, copying-failure detection,
+and XOR retention in `results.json`. The separate `stopping_results.json`
+records 20 audits: five each for redundant candidates, independent irrelevant
+candidates with unresolved target uncertainty, XOR, and small-sample XOR.
+Both large-sample null scenarios stop within scope, large-sample XOR continues,
+and small-sample XOR remains inconclusive in every run.
+
+The stopping certificate is a separate fixed-sample method with predeclared
+finite supports, not a new interpretation of a non-significant permutation test.
+Its derivation, assumptions, conservative sample requirements, and remaining
+limits are in [STOPPING.md](experiments/watcher_audit/STOPPING.md).
+Original paper files and scripts are retained unchanged.
+
 ## What was checked
 
 The original code at `09bebc11674027d9e3ee9b12b981919018ccc2ad` ran successfully with Python 3.12.

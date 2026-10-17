@@ -1,0 +1,782 @@
+{
+  "protocol": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "large_n": 250000,
+    "small_n": 32,
+    "minimum_bits": 0.25,
+    "alpha_per_fixed_audit": 0.05,
+    "candidate_order": [
+      "A",
+      "B"
+    ],
+    "note": "five demonstrations; no pooled or sequential confidence claim"
+  },
+  "runs": [
+    {
+      "seed": 0,
+      "scenario": "redundant",
+      "status": "stop_within_declared_scope",
+      "n": 250000,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 16,
+      "tv_radius": 0.005307746633461909,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 0.0,
+          "lower_bits": 0.0,
+          "upper_bits": 0.22273139824815524
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 0.0,
+          "lower_bits": 0.0,
+          "upper_bits": 0.22273139824815524
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 0.0,
+          "lower_bits": 0.0,
+          "upper_bits": 0.23505560427693428
+        }
+      ]
+    },
+    {
+      "seed": 0,
+      "scenario": "independent_null",
+      "status": "stop_within_declared_scope",
+      "n": 250000,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 8,
+      "tv_radius": 0.004133015779798948,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 3.915629207318361e-06,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12258858293678127
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 4.1505766601446226e-08,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12258470881334055
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 5.536708101328003e-06,
+          "lower_bits": 0.0,
+          "upper_bits": 0.1341930462080356
+        }
+      ]
+    },
+    {
+      "seed": 0,
+      "scenario": "xor",
+      "status": "continue",
+      "n": 250000,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 8,
+      "tv_radius": 0.004133015779798948,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 8.74204683976032e-06,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12259340935441371
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 2.073223521747991e-07,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12258487462992612
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 0.9999960905929886,
+          "lower_bits": 0.8658085810930543,
+          "upper_bits": 1.0
+        }
+      ]
+    },
+    {
+      "seed": 0,
+      "scenario": "xor",
+      "status": "inconclusive",
+      "n": 32,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 8,
+      "tv_radius": 0.36531043558085535,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 0.009638779284205201,
+          "lower_bits": 0.0,
+          "upper_bits": 1.0
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 0.023848784174650417,
+          "lower_bits": 0.0,
+          "upper_bits": 1.0
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 0.9971803988942642,
+          "lower_bits": 0.0,
+          "upper_bits": 1.0
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "scenario": "redundant",
+      "status": "stop_within_declared_scope",
+      "n": 250000,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 16,
+      "tv_radius": 0.005307746633461909,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 0.0,
+          "lower_bits": 0.0,
+          "upper_bits": 0.22273139824815524
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 0.0,
+          "lower_bits": 0.0,
+          "upper_bits": 0.22273139824815524
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 0.0,
+          "lower_bits": 0.0,
+          "upper_bits": 0.23505560427693428
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "scenario": "independent_null",
+      "status": "stop_within_declared_scope",
+      "n": 250000,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 8,
+      "tv_radius": 0.004133015779798948,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 1.1168072471701151e-05,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12259583538004565
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 6.11001687023105e-08,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12258472840774265
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 1.2073289437086743e-05,
+          "lower_bits": 0.0,
+          "upper_bits": 0.13419958278937136
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "scenario": "xor",
+      "status": "continue",
+      "n": 250000,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 8,
+      "tv_radius": 0.004133015779798948,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 7.046403416310909e-08,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12258473777160811
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 1.1122690822595871e-05,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12259578999839654
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 0.9999888247861093,
+          "lower_bits": 0.865801315286175,
+          "upper_bits": 1.0
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "scenario": "xor",
+      "status": "inconclusive",
+      "n": 32,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 8,
+      "tv_radius": 0.36531043558085535,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 0.0028306947500156276,
+          "lower_bits": 0.0,
+          "upper_bits": 1.0
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 0.0028306947500156276,
+          "lower_bits": 0.0,
+          "upper_bits": 1.0
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 0.9999999999999998,
+          "lower_bits": 0.0,
+          "upper_bits": 1.0
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "scenario": "redundant",
+      "status": "stop_within_declared_scope",
+      "n": 250000,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 16,
+      "tv_radius": 0.005307746633461909,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 0.0,
+          "lower_bits": 0.0,
+          "upper_bits": 0.22273139824815524
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 0.0,
+          "lower_bits": 0.0,
+          "upper_bits": 0.22273139824815524
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 0.0,
+          "lower_bits": 0.0,
+          "upper_bits": 0.23505560427693428
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "scenario": "independent_null",
+      "status": "stop_within_declared_scope",
+      "n": 250000,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 8,
+      "tv_radius": 0.004133015779798948,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 9.896041387902343e-06,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12259456334896185
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 1.3633568853865796e-06,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12258603066445933
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 1.1417725947371338e-05,
+          "lower_bits": 0.0,
+          "upper_bits": 0.13419892722588164
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "scenario": "xor",
+      "status": "continue",
+      "n": 250000,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 8,
+      "tv_radius": 0.004133015779798948,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 1.6073788078330153e-08,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12258468338136203
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 3.901588767618591e-07,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12258505746645071
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 0.9999901033663874,
+          "lower_bits": 0.8658025938664531,
+          "upper_bits": 1.0
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "scenario": "xor",
+      "status": "inconclusive",
+      "n": 32,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 8,
+      "tv_radius": 0.36531043558085535,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 1.1093644279869253e-05,
+          "lower_bits": 0.0,
+          "upper_bits": 1.0
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 0.0028306947500156276,
+          "lower_bits": 0.0,
+          "upper_bits": 1.0
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 0.9971803988942642,
+          "lower_bits": 0.0,
+          "upper_bits": 1.0
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "scenario": "redundant",
+      "status": "stop_within_declared_scope",
+      "n": 250000,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 16,
+      "tv_radius": 0.005307746633461909,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 0.0,
+          "lower_bits": 0.0,
+          "upper_bits": 0.22273139824815524
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 0.0,
+          "lower_bits": 0.0,
+          "upper_bits": 0.22273139824815524
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 0.0,
+          "lower_bits": 0.0,
+          "upper_bits": 0.23505560427693428
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "scenario": "independent_null",
+      "status": "stop_within_declared_scope",
+      "n": 250000,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 8,
+      "tv_radius": 0.004133015779798948,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 6.648319672564185e-10,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12258466797240591
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 3.498726789175066e-06,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12258816603436312
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 4.3315702074053775e-06,
+          "lower_bits": 0.0,
+          "upper_bits": 0.13419184107014168
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "scenario": "xor",
+      "status": "continue",
+      "n": 250000,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 8,
+      "tv_radius": 0.004133015779798948,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 1.4470350961914846e-07,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12258481201108357
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 9.68396328193677e-06,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12259435127085588
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 0.99999999926134,
+          "lower_bits": 0.8658124897614057,
+          "upper_bits": 1.0
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "scenario": "xor",
+      "status": "inconclusive",
+      "n": 32,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 8,
+      "tv_radius": 0.36531043558085535,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 0.011482406826014868,
+          "lower_bits": 0.0,
+          "upper_bits": 1.0
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 0.011482406826014868,
+          "lower_bits": 0.0,
+          "upper_bits": 1.0
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 1.0,
+          "lower_bits": 0.0,
+          "upper_bits": 1.0
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "scenario": "redundant",
+      "status": "stop_within_declared_scope",
+      "n": 250000,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 16,
+      "tv_radius": 0.005307746633461909,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 0.0,
+          "lower_bits": 0.0,
+          "upper_bits": 0.22273139824815524
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 0.0,
+          "lower_bits": 0.0,
+          "upper_bits": 0.22273139824815524
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 0.0,
+          "lower_bits": 0.0,
+          "upper_bits": 0.23505560427693428
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "scenario": "independent_null",
+      "status": "stop_within_declared_scope",
+      "n": 250000,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 8,
+      "tv_radius": 0.004133015779798948,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 2.388656810126122e-07,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12258490617325496
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 1.0434078341337027e-06,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12258571071540808
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 1.6177280918405756e-05,
+          "lower_bits": 0.0,
+          "upper_bits": 0.13420368678085268
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "scenario": "xor",
+      "status": "continue",
+      "n": 250000,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 8,
+      "tv_radius": 0.004133015779798948,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 3.795516238636054e-06,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12258846282381258
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 1.0018145286672109e-05,
+          "lower_bits": 0.0,
+          "upper_bits": 0.12259468545286062
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 0.9999997539800862,
+          "lower_bits": 0.8658122444801519,
+          "upper_bits": 1.0
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "scenario": "xor",
+      "status": "inconclusive",
+      "n": 32,
+      "alpha": 0.05,
+      "minimum_bits": 0.25,
+      "joint_alphabet_size": 8,
+      "tv_radius": 0.36531043558085535,
+      "complete_subset_search": true,
+      "groups": [
+        {
+          "candidate_indices": [
+            0
+          ],
+          "estimate_bits": 0.009638779284205201,
+          "lower_bits": 0.0,
+          "upper_bits": 1.0
+        },
+        {
+          "candidate_indices": [
+            1
+          ],
+          "estimate_bits": 0.023848784174650417,
+          "lower_bits": 0.0,
+          "upper_bits": 1.0
+        },
+        {
+          "candidate_indices": [
+            0,
+            1
+          ],
+          "estimate_bits": 0.9971803988942642,
+          "lower_bits": 0.0,
+          "upper_bits": 1.0
+        }
+      ]
+    }
+  ]
+}

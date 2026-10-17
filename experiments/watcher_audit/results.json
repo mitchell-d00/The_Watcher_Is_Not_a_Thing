@@ -1,0 +1,525 @@
+{
+  "protocol": {
+    "discovery_n": 1024,
+    "validation_n": 1024,
+    "permutations": 999,
+    "family_alpha_per_audit": 0.05,
+    "minimum_gain_bits": 0.05,
+    "selection_tolerance_bits": 0.01,
+    "seeds_fixed_before_run": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "scope": "synthetic categorical IID; no automatic deletion"
+  },
+  "runs": [
+    {
+      "seed": 0,
+      "normal": {
+        "panel": [
+          "watch_a",
+          "watch_b"
+        ],
+        "monitor_tests": {
+          "watch_a": {
+            "gain_bits": 0.9997216590131903,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          },
+          "watch_b": {
+            "gain_bits": 0.9997987121399465,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          }
+        },
+        "identical_outputs_in_sample": [
+          [
+            "watch_a",
+            "copy_a"
+          ]
+        ],
+        "unselected": [
+          "copy_a",
+          "noise",
+          "stuck"
+        ],
+        "residual_target_bits": 0.0,
+        "missing_target_information_alert": false,
+        "all_selected_contributions_detected": true,
+        "n_validation": 1024
+      },
+      "copy_failure": {
+        "panel": [
+          "watch_a",
+          "watch_b"
+        ],
+        "monitor_tests": {
+          "watch_a": {
+            "gain_bits": 0.0,
+            "p": null,
+            "distinct_contribution_detected": false
+          },
+          "watch_b": {
+            "gain_bits": 0.0,
+            "p": null,
+            "distinct_contribution_detected": false
+          }
+        },
+        "identical_outputs_in_sample": [
+          [
+            "watch_a",
+            "copy_a"
+          ],
+          [
+            "watch_a",
+            "watch_b"
+          ],
+          [
+            "copy_a",
+            "watch_b"
+          ]
+        ],
+        "unselected": [
+          "copy_a",
+          "noise",
+          "stuck"
+        ],
+        "residual_target_bits": 0.9997987121399465,
+        "missing_target_information_alert": true,
+        "all_selected_contributions_detected": false,
+        "n_validation": 1024
+      },
+      "xor": {
+        "panel": [
+          "left",
+          "right"
+        ],
+        "monitor_tests": {
+          "left": {
+            "gain_bits": 0.9997216590131903,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          },
+          "right": {
+            "gain_bits": 0.9997987121399465,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          }
+        },
+        "identical_outputs_in_sample": [],
+        "unselected": [],
+        "residual_target_bits": 0.0,
+        "missing_target_information_alert": false,
+        "all_selected_contributions_detected": true,
+        "n_validation": 1024
+      }
+    },
+    {
+      "seed": 1,
+      "normal": {
+        "panel": [
+          "watch_a",
+          "watch_b"
+        ],
+        "monitor_tests": {
+          "watch_a": {
+            "gain_bits": 0.9983091070534557,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          },
+          "watch_b": {
+            "gain_bits": 0.9966265317998725,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          }
+        },
+        "identical_outputs_in_sample": [
+          [
+            "watch_a",
+            "copy_a"
+          ]
+        ],
+        "unselected": [
+          "copy_a",
+          "noise",
+          "stuck"
+        ],
+        "residual_target_bits": 0.0,
+        "missing_target_information_alert": false,
+        "all_selected_contributions_detected": true,
+        "n_validation": 1024
+      },
+      "copy_failure": {
+        "panel": [
+          "watch_a",
+          "watch_b"
+        ],
+        "monitor_tests": {
+          "watch_a": {
+            "gain_bits": 0.0,
+            "p": null,
+            "distinct_contribution_detected": false
+          },
+          "watch_b": {
+            "gain_bits": 0.0,
+            "p": null,
+            "distinct_contribution_detected": false
+          }
+        },
+        "identical_outputs_in_sample": [
+          [
+            "watch_a",
+            "copy_a"
+          ],
+          [
+            "watch_a",
+            "watch_b"
+          ],
+          [
+            "copy_a",
+            "watch_b"
+          ]
+        ],
+        "unselected": [
+          "copy_a",
+          "noise",
+          "stuck"
+        ],
+        "residual_target_bits": 0.9966265317998726,
+        "missing_target_information_alert": true,
+        "all_selected_contributions_detected": false,
+        "n_validation": 1024
+      },
+      "xor": {
+        "panel": [
+          "left",
+          "right"
+        ],
+        "monitor_tests": {
+          "left": {
+            "gain_bits": 0.9983091070534557,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          },
+          "right": {
+            "gain_bits": 0.9966265317998725,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          }
+        },
+        "identical_outputs_in_sample": [],
+        "unselected": [],
+        "residual_target_bits": 0.0,
+        "missing_target_information_alert": false,
+        "all_selected_contributions_detected": true,
+        "n_validation": 1024
+      }
+    },
+    {
+      "seed": 2,
+      "normal": {
+        "panel": [
+          "watch_a",
+          "watch_b"
+        ],
+        "monitor_tests": {
+          "watch_a": {
+            "gain_bits": 0.9986405229762099,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          },
+          "watch_b": {
+            "gain_bits": 0.9988717977016733,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          }
+        },
+        "identical_outputs_in_sample": [
+          [
+            "watch_a",
+            "copy_a"
+          ]
+        ],
+        "unselected": [
+          "copy_a",
+          "noise",
+          "stuck"
+        ],
+        "residual_target_bits": 0.0,
+        "missing_target_information_alert": false,
+        "all_selected_contributions_detected": true,
+        "n_validation": 1024
+      },
+      "copy_failure": {
+        "panel": [
+          "watch_a",
+          "watch_b"
+        ],
+        "monitor_tests": {
+          "watch_a": {
+            "gain_bits": 0.0,
+            "p": null,
+            "distinct_contribution_detected": false
+          },
+          "watch_b": {
+            "gain_bits": 0.0,
+            "p": null,
+            "distinct_contribution_detected": false
+          }
+        },
+        "identical_outputs_in_sample": [
+          [
+            "watch_a",
+            "copy_a"
+          ],
+          [
+            "watch_a",
+            "watch_b"
+          ],
+          [
+            "copy_a",
+            "watch_b"
+          ]
+        ],
+        "unselected": [
+          "copy_a",
+          "noise",
+          "stuck"
+        ],
+        "residual_target_bits": 0.9988717977016734,
+        "missing_target_information_alert": true,
+        "all_selected_contributions_detected": false,
+        "n_validation": 1024
+      },
+      "xor": {
+        "panel": [
+          "left",
+          "right"
+        ],
+        "monitor_tests": {
+          "left": {
+            "gain_bits": 0.9986405229762099,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          },
+          "right": {
+            "gain_bits": 0.9988717977016733,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          }
+        },
+        "identical_outputs_in_sample": [],
+        "unselected": [],
+        "residual_target_bits": 0.0,
+        "missing_target_information_alert": false,
+        "all_selected_contributions_detected": true,
+        "n_validation": 1024
+      }
+    },
+    {
+      "seed": 3,
+      "normal": {
+        "panel": [
+          "watch_a",
+          "watch_b"
+        ],
+        "monitor_tests": {
+          "watch_a": {
+            "gain_bits": 0.9997762854074639,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          },
+          "watch_b": {
+            "gain_bits": 0.9981382217467311,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          }
+        },
+        "identical_outputs_in_sample": [
+          [
+            "watch_a",
+            "copy_a"
+          ]
+        ],
+        "unselected": [
+          "copy_a",
+          "noise",
+          "stuck"
+        ],
+        "residual_target_bits": 0.0,
+        "missing_target_information_alert": false,
+        "all_selected_contributions_detected": true,
+        "n_validation": 1024
+      },
+      "copy_failure": {
+        "panel": [
+          "watch_a",
+          "watch_b"
+        ],
+        "monitor_tests": {
+          "watch_a": {
+            "gain_bits": 0.0,
+            "p": null,
+            "distinct_contribution_detected": false
+          },
+          "watch_b": {
+            "gain_bits": 0.0,
+            "p": null,
+            "distinct_contribution_detected": false
+          }
+        },
+        "identical_outputs_in_sample": [
+          [
+            "watch_a",
+            "copy_a"
+          ],
+          [
+            "watch_a",
+            "watch_b"
+          ],
+          [
+            "copy_a",
+            "watch_b"
+          ]
+        ],
+        "unselected": [
+          "copy_a",
+          "noise",
+          "stuck"
+        ],
+        "residual_target_bits": 0.9981382217467308,
+        "missing_target_information_alert": true,
+        "all_selected_contributions_detected": false,
+        "n_validation": 1024
+      },
+      "xor": {
+        "panel": [
+          "left",
+          "right"
+        ],
+        "monitor_tests": {
+          "left": {
+            "gain_bits": 0.9997762854074639,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          },
+          "right": {
+            "gain_bits": 0.9981382217467311,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          }
+        },
+        "identical_outputs_in_sample": [],
+        "unselected": [],
+        "residual_target_bits": 0.0,
+        "missing_target_information_alert": false,
+        "all_selected_contributions_detected": true,
+        "n_validation": 1024
+      }
+    },
+    {
+      "seed": 4,
+      "normal": {
+        "panel": [
+          "watch_a",
+          "watch_b"
+        ],
+        "monitor_tests": {
+          "watch_a": {
+            "gain_bits": 0.9994750297536429,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          },
+          "watch_b": {
+            "gain_bits": 0.9994750297536429,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          }
+        },
+        "identical_outputs_in_sample": [
+          [
+            "watch_a",
+            "copy_a"
+          ]
+        ],
+        "unselected": [
+          "copy_a",
+          "noise",
+          "stuck"
+        ],
+        "residual_target_bits": 0.0,
+        "missing_target_information_alert": false,
+        "all_selected_contributions_detected": true,
+        "n_validation": 1024
+      },
+      "copy_failure": {
+        "panel": [
+          "watch_a",
+          "watch_b"
+        ],
+        "monitor_tests": {
+          "watch_a": {
+            "gain_bits": 0.0,
+            "p": null,
+            "distinct_contribution_detected": false
+          },
+          "watch_b": {
+            "gain_bits": 0.0,
+            "p": null,
+            "distinct_contribution_detected": false
+          }
+        },
+        "identical_outputs_in_sample": [
+          [
+            "watch_a",
+            "copy_a"
+          ],
+          [
+            "watch_a",
+            "watch_b"
+          ],
+          [
+            "copy_a",
+            "watch_b"
+          ]
+        ],
+        "unselected": [
+          "copy_a",
+          "noise",
+          "stuck"
+        ],
+        "residual_target_bits": 0.9994750297536428,
+        "missing_target_information_alert": true,
+        "all_selected_contributions_detected": false,
+        "n_validation": 1024
+      },
+      "xor": {
+        "panel": [
+          "left",
+          "right"
+        ],
+        "monitor_tests": {
+          "left": {
+            "gain_bits": 0.9994750297536429,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          },
+          "right": {
+            "gain_bits": 0.9994750297536429,
+            "p": 0.001,
+            "distinct_contribution_detected": true
+          }
+        },
+        "identical_outputs_in_sample": [],
+        "unselected": [],
+        "residual_target_bits": 0.0,
+        "missing_target_information_alert": false,
+        "all_selected_contributions_detected": true,
+        "n_validation": 1024
+      }
+    }
+  ]
+}
